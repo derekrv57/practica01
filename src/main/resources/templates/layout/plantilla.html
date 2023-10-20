@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+	<title>TechShop</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+	<link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+	<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+	<script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+        <script src="js/rutinas.js"></script>
+</head>
+<body>
+<header th:fragment="header" class="header">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">Arbolitos S.A.</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	    <div class="navbar-nav">
+	      <a class="nav-item nav-link active" href="#">Arboles <span class="sr-only">(current)</span></a>
+	      <a class="nav-item nav-link disabled" href="#">Arbustos</a>
+	    </div>
+	  </div>
+	</nav>
+</header>
+<footer th:fragment="footer">
+	&copy; Arbolitos S.A.
+</footer>
+</body>
+</html>
